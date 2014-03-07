@@ -5,7 +5,7 @@ Lightsheet is a specification for publish-subscribe mechanisms put into a concis
 
 General
 -------
-* A lightsheet can hold a number of events (`[0..n]`)
+* A lightsheet can hold any number of events (`[0..n]`)
 * An event can store any kind of data (`[0..n]`)
 
 Storing events
