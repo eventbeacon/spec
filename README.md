@@ -1,7 +1,7 @@
-Lightbeacon specification
+Eventbeacon specification
 ========================
 
-Lightbeacon is a specification for publish-subscribe mechanisms put into a concise and united API. For reference, a lightbeacon compatible interface is referred to as a beacon.
+Eventbeacon is a specification for publish-subscribe mechanisms put into a concise and united API. For reference, an event beacon compatible interface is referred to as a beacon.
 
 General
 -------
@@ -17,4 +17,6 @@ Storing events
 Calling events
 --------------
 * A beacon needs to have a method to call an event. This should be called `trigger`.
-* If the programming language allows a to add methods to instances at run-time, it should provide a shorthand function for calling events. (`.trigger('myEvent')` would be `.myEvent()` and `.trigger('myEvent', 5, 6)` would be `.myEvent(5, 6)`)
+* The method `trigger` has exactly two parameters:
+  * The name of the event
+  * The data of the event (Optional)
