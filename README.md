@@ -8,6 +8,13 @@ General
 * A beacon can hold any number of events (`[0..n]`)
 * An event can store any kind of data (`[0..n]`)
 
+Event definition
+----------------
+An event has the following fields:
+* Timestamp in ms
+* Type
+* Data
+
 Storing events
 --------------
 * A beacon needs to have a method to register an event. This should be called `.on()`. If `on` is not available due to it being a reserved word, the method should be called `addListener`.
